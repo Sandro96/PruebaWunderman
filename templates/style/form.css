@@ -1,0 +1,186 @@
+.error
+{
+    border:solid 1px rgba(256,0,0,0.6);
+}
+.normal
+{
+    border:solid 1px rgba(0,0,0,0.4);
+}
+.msgError
+{
+    position:absolute;
+    color:rgba(256,0,0,0.6);
+    top:40px;
+    font-size:14px;
+    right: 0;
+}
+.txtEmpty
+{
+    position:absolute;
+    opacity:.5;
+    margin-left:8px;
+}
+.txtFull
+{
+    position:absolute;
+    opacity:.5;
+    margin-left:8px;
+    font-size:12px;
+    top:1px;
+}
+.txtInput
+{
+    font-size:17px;
+    margin-left:8px;
+    height:70%;
+    width:100%;
+    position:absolute;
+    border-style:none;
+    background-color:transparent;
+    color:rgba(0,0,0,0.6);
+    bottom:0;
+}
+.cntInputText
+{
+    position:relative;
+    border-radius:3px;
+    height:40px;
+     width:100%;
+    display:flex;
+    align-items:center;
+    flex-flow:row nowrap;
+}
+#cntForm
+{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:70%;
+    margin:auto;
+}
+#cntForm form
+{
+    margin-top:25px;
+    margin-bottom:40px;
+    color:rgba(0,0,0,0.6);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    height:270px;
+}
+h3
+{
+    font-weight:normal;
+    font-size:25px;
+    text-align:center;
+}
+hr
+{
+    border-color:#cfcfcf;
+}
+.dblText
+{
+    display:flex;
+    justify-content:space-between;
+    flex-flow:row wrap;
+    width:100%;
+}
+.dblText > div
+{
+    display:flex;
+    align-items:center;
+    width:48%;
+}
+#chkTerms
+{
+    margin-right:8px;
+}
+#btnEnviar
+{
+    border-radius:3px;
+    padding:8px 30px;
+    font-size:20px;
+    border-style:none;
+    color:#fff;
+    background-color:#35a4f6;
+}
+#btnEnviar:hover
+{
+    background-color:#0093ff;
+    text-shadow:0 0 2px #000;
+}
+#btnEnviar:active
+{
+    transform:scale(0.95);
+}
+#msgErrTerms
+{
+    top:30px;
+}
+@media screen and (max-width:630px)
+{
+    #cntForm
+    {
+        width:90%;
+    }
+}
+@media screen and (max-width:570px)
+{
+    #msgErrTerms
+    {
+        top:35px;
+    }
+}
+@media screen and (max-width:490px)
+{
+    #cntForm
+    {
+        margin-bottom:0px;
+    }
+    .dblText > div
+    {
+        width:100%;
+        height:;
+    }
+    #cntForm form
+    {
+        height:470px;
+    }
+    .cntInputText
+    {
+        margin-top:18px;
+    }
+    .cntSelect
+    {
+        margin-top:18px;
+    }
+    #cntChkTerms
+    {
+        margin-top:25px;
+    }
+    #msgErrTerms
+    {
+        top:20px;
+    }
+    #btnEnviar
+    {
+        margin-top:25px;
+    }
+}
+@media screen and (max-width:275px)
+{
+    #cntForm form
+    {
+        height:480px;
+    }
+    #msgErrTerms
+    {
+        top:33px;
+    }
+    #btnEnviar
+    {
+        margin-top:30px;
+    }
+}

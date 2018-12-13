@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Prueba</title>
+        <link rel="stylesheet"href="slick/slick.css">
+        <link rel="stylesheet"href="slick/slick-theme.css">
+        <link rel="stylesheet"href="templates/style/master.css">
+        <link rel="stylesheet"href="templates/style/selects.css">
+        <link rel="stylesheet"href="templates/style/form.css">
+        <link rel="stylesheet"href="templates/style/articles.css">
+	    <link rel="stylesheet"href="templates/style/slider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body onload="fillSelect();">
+        <div id='CtrlBody'>
+            <header>
+                <div id="TopBar">
+                    <label id="Title">Landing Page</label>
+                </div>
+                <div class="slider">
+                    <div class="CtrlSlider">
+                        <div class="CtrlPrd">
+                            <span>
+                                <h4>PRODUCT</h4>
+                                <h1>ONE</h1>
+                            </span>
+                            <a class="ButtonBuy" href="#">COMPRAR</a>
+                        </div>
+                        <div class="CtrlImg">
+                            <img src="templates/pictures/splash1.png">
+                        </div>
+                    </div>
+                    <div class="CtrlSlider">
+                        <div class="CtrlPrd">
+                            <span>
+                                <h4>PRODUCT</h4>
+                                <h1>TWO</h1>
+                            </span>
+                            <a class="ButtonBuy" href="#">COMPRAR</a>
+                        </div>
+                        <div class="CtrlImg">
+                            <img src="templates/pictures/splash2.png">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section>
+                <div id="Art">
+                    <ul id="CtrlArt">
+                        <h2>Últimos Artículos</h2>
+                        <li class="up">
+                            <span class="ImgArt"></span>
+                            <span class="TxtArt">
+                                <h3>Lorem Ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                            </span>
+                        </li>
+                        <li class="down">
+                            <span class="ImgArt"></span>
+                            <span class="TxtArt">
+                                <h3>Lorem Ipsum sit amet, consetetur.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </span>
+                        </li>
+                        <li class="up">
+                            <span class="ImgArt"></span>
+                            <span class="TxtArt">
+                                <h3>Lorem Ipsum sit amet, consetetur.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                            </span>
+                        </li>
+                        <li class="down">
+                            <span class="ImgArt"></span>
+                            <span class="TxtArt">
+                                <h3>Lorem Ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            </span>
+                        </li>
+                        <li class="up">
+                            <span class="ImgArt"></span>
+                            <span class="TxtArt">
+                                <h3>Lorem Ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                            </span>
+                        </li>
+                        <li class="down">
+                            <span class="ImgArt"></span>
+                            <span class="TxtArt">
+                                <h3>Lorem Ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </span>
+                        </li>
+                        <li class="up">
+                            <span class="ImgArt"></span>
+                            <span class="TxtArt">
+                                <h3>Lorem Ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                            </span>
+                        </li>
+                        <li class="down">
+                            <span class="ImgArt"></span>
+                            <span class="TxtArt">
+                                <h3>Lorem Ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                            </span>
+                        </li>
+		            </ul>
+                </div>
+                <h3>Formulario</h3>
+                <hr>
+                <div id="cntForm">
+                    <form onsubmit="return verificarDatos();">
+                        <div class="dblText">
+                            <div class="cntInputText normal">
+                                <label class="txtEmpty lblPlcHld">Nombre</label>
+                                <input onfocus="resetState(this.id);" onkeyup="stylePH(this.value,'Nombre');" class="txtInput" id="txtNom" type="text">
+                                <label class="msgError"></label>
+                            </div>
+                            <div class="cntInputText normal">
+                                <label class="txtEmpty lblPlcHld">Apellido</label>
+                                <input onfocus="resetState(this.id);" onkeyup="stylePH(this.value,'Apellido');" class="txtInput" id="txtApe" type="text">
+                                <label class="msgError"></label>
+                            </div>
+                        </div>
+                        <div class="cntInputText normal">
+                            <label class="txtEmpty lblPlcHld">e-Mail</label>
+                            <input onfocus="resetState(this.id);" onkeyup="stylePH(this.value,'e-Mail');" class="txtInput" id="txtMail" type="text">
+                            <label class="msgError"></label>
+                        </div>
+                        <div class="dblText">
+                            <div onclick="showHideList('lstDep');" class="cntSelect normal">
+                                <label class="txtEmpty lblPlcHld">Departamento</label>
+                                <div>
+                                    <p onchange="showHideList('lstDep');" id="txtDep"></p>
+                                    <label class="msgError"></label>
+                                    <img src="templates/pictures/arrow.png">
+                                </div>
+                                <ul id="lstDep" class="hideList"></ul>
+                            </div>
+                            <div onclick="showHideList('lstLoc');" class="cntSelect normal">
+                                <label class="txtEmpty lblPlcHld">Localidad</label>
+                                <div>
+                                    <p onchange="showHideList('lstLoc');stylePH(this.innerHTML,'Localidad');" id="txtLoc"></p>
+                                    <label class="msgError"></label>
+                                    <img src="templates/pictures/arrow.png">
+                                </div>
+                                <ul id="lstLoc" class="hideList"></ul>
+                            </div>
+                        </div>
+                        <div class="dblText">
+                            <div class="cntInputText normal">
+                                <label class="txtEmpty lblPlcHld">C.I.</label>
+                                <input onfocus="resetState(this.id);" onkeyup="stylePH(this.value,'C.I.');" class="txtInput" id="txtCi" type="text">
+                                <label class="msgError"></label>
+                            </div>
+                            <div id="cntChkTerms" style="position:relative;">
+                                <input onclick="resetState(this.id);" id="chkTerms" type="checkbox">
+                                <label id="msgErrTerms" class="msgError"></label>
+                                <label>Acepto las bases y condiciones</label>
+                            </div>
+                        </div>
+                        <input id="btnEnviar" type="submit" value="ENVIAR">
+                    </form>
+                </div>
+            </section>
+        </div>
+        <script src="templates/js/datos.js"></script>
+        <script src="templates/js/logica.js"></script>
+	    <script src="templates/js/verificacion.js"></script>
+        <script src="templates/js/slick.min.js"></script>
+        <script src="templates/js/slick.js"></script>
+    </body>
+</html>

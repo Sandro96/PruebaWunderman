@@ -1,0 +1,86 @@
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+    text-decoration:none;
+    
+    position:absolute;
+    top:40%;
+    width:50px;
+    height:50px;
+    border-radius:100%;
+    border-style:none;
+    background-color:#fff;
+    z-index:10;
+}
+.slick-prev p,
+.slick-next p
+{
+    position:absolute;
+    font-family:ms gothic;
+    font-size:38px;
+    color:#35a4f6;
+}
+.slick-prev
+{
+    left:20px;
+}
+.slick-next
+{
+    right:20px;
+}
+.slick-prev p
+{
+    top:4px;
+    left:13px;
+}
+.slick-next p
+{
+    top:4px;
+    left:18px;
+}
+@media screen and (max-width:510px)
+{
+    .slick-prev,
+    .slick-next
+    {
+        top:36%;
+        width:40px;
+        height:40px;
+    }
+    .slick-prev p,
+    .slick-next p
+    {
+        font-size:29px;
+    }
+    .slick-prev
+    {
+        left:10px;
+    }
+    .slick-next
+    {
+        right:10px;
+    }
+    .slick-prev p
+    {
+        top:3px;
+        left:11px;
+    }
+    .slick-next p
+    {
+        top:3px;
+        left:15px;
+    }
+}
+@media screen and (max-width:430px)
+{
+    .slick-prev,
+    .slick-next
+    {
+        display:none;
+    }
+}

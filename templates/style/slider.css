@@ -1,0 +1,248 @@
+.slider 
+{
+    width:100% ;
+}
+
+.CtrlPrd h4 
+{
+    font-size:22px ;
+    font-weight:normal ;
+    color:#3b3b3b ;
+}
+.CtrlPrd h1
+{
+    font-size:100px; font-weight:normal; color:#3b3b3b ;
+}
+.CtrlSlider img 
+{
+    width:100%
+}
+.CtrlImg 
+{
+    position:absolute ;
+    height:100% ; width:50% ;
+    right:60px ;
+    top:0 ;
+}
+
+#CtrlBody
+ {
+    background-color:white ;
+    max-width:800px ;
+     margin:auto ;
+    box-shadow:0 0 5px 0 #000 ;
+    overflow:hidden ;
+}
+
+h2
+ {
+    font-weight:normal
+}
+
+.CtrlSlider    
+{
+    position:relative ;
+    background-color:#9b9b9b ;
+    z-index:1 ; 
+    width:100% ; height:auto ;
+    padding:20px 90px ;
+}
+.CtrlPrd
+{
+    display:flex ;
+    flex-direction:column ;
+    justify-content:center ;
+    align-items:center ;
+    height:200px ;
+    width:40% ;
+}
+
+.ButtonBuy 
+{
+    display:flex ;
+    justify-content:center ;
+    align-items:center ;
+    width:100% ;
+    height:25% ;
+    text-decoration:none ;
+    color:#fff ;
+    background-color: #045188 ;
+    border-radius:5px ;
+    z-index:1 ;
+    padding:5px;
+}
+
+
+@media screen and (max-width:700px)
+{
+    .CtrlPrd
+    {
+        height:180px
+    }
+    
+    .CtrlPrd h4
+    {
+        font-size:25px
+    }
+    
+    .CtrlPrd h1
+    {
+        font-size:90px
+    }
+
+}
+
+
+@media screen and (max-width:630px)
+{   
+    .CtrlPrd
+    {
+        height:160px
+    }
+    
+    .CtrlPrd h4
+    {
+        font-size:20px  
+    }
+    
+.CtrlPrd h1
+    {
+        font-size:70px
+    }
+}
+
+
+@media screen and (max-width:570px)
+{
+    .CtrlSlider
+    {
+        height:200px
+    }
+    
+    .CtrlPrd
+    {
+        justify-content:space-between ; 
+        position:absolute ;
+        height:180px ;
+        top:10px ;
+    left:45px ;
+    }
+    
+    .CtrlPrd h4
+    {
+        font-size:20px
+    }
+    
+    .CtrlPrd h1
+    {
+        font-size:70px
+    }
+    
+    .ButtonBuy 
+    {
+        width:65% ;
+        height:20% ;
+        font-size:15px ;
+    }
+    
+    .CtrlImg 
+    {
+        right:30px ;
+        top:5px ;
+    }
+
+}
+
+
+@media screen and (max-width:510px)
+{
+    .CtrlPrd h4
+    {
+        font-size:20px  
+    }
+    
+    .CtrlPrd h1
+    {
+        font-size:65px
+    }
+    
+    .CtrlImg
+    {
+        right:20px ;
+        top:20px ;
+        width:220px ;
+    }
+    
+    .ButtonBuy 
+    {
+        width:80% ;
+        font-size:15px ;
+    }
+
+}
+
+
+@media screen and (max-width:430px)
+{      
+    .CtrlPrd
+    {
+        height:150px ;
+        top:20px ;
+        left:20px ;
+    }
+    
+    .CtrlPrd h4
+    {
+        font-size:13px ;
+    }
+    
+.CtrlPrd h1
+    {
+        font-size:40px
+    }
+    
+.CtrlImg 
+    {
+        width:220px ;
+        right:10px ;
+    }
+    
+.ButtonBuy 
+    {
+        width:80% ; font-size:13px ;
+    }
+}
+
+
+
+@media screen and (max-width:340px)
+{   
+    .CtrlPrd {height:160px ; 
+    top:10px ;
+    left:10px ;
+}
+    
+    .CtrlImg 
+    {
+        width:220px ;
+        right:10px ;   
+    }
+
+    .ButtonBuy 
+    {
+        width:90% ;
+        font-size:13px ;
+    }
+
+}
+
+
+@media screen and (max-width:340px)
+{
+    .CtrlImg
+    {
+        width:220px ;
+        right:-25px ;
+    }
+
+}

@@ -1,0 +1,73 @@
+.hideList
+{
+  display:none;
+}
+.showList
+{
+  display:flex;
+}
+.cntSelect
+{
+  display:flex;
+  align-items:center;
+  flex-flow:row nowrap;
+  position:relative;
+  border-radius:3px;
+  height:40px;
+  min-width:120px;
+  width:100%;
+  cursor:pointer;
+}
+.cntSelect div
+{
+  display:flex;
+  align-items:center;
+  flex-flow:row nowrap;
+  width:100%;
+  height:100%;
+  padding:0 8px;
+}
+.cntSelect label
+{
+  
+  cursor:pointer;
+}
+.cntSelect img
+{
+  opacity:.4;
+  height:10px;
+}
+.cntSelect p
+{
+  display:flex;
+  align-items:end;  
+  height:90%;
+  width:100%;
+}
+.cntSelect ul
+{
+  flex-direction:column;
+  list-style:none;
+  position:absolute;
+  width:100%;
+  background-color:rgb(216, 216, 216);
+  border:solid 1px rgba(0,0,0,0.4);
+  border-radius:4px;
+  top:38px;
+  z-index:1;
+}
+.cntSelect ul li
+{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:3px;
+  height:25px;
+  cursor:pointer;
+}
+.cntSelect ul li:hover
+{
+  background-color:#ffffff;
+  color:rgb(0, 0, 0);
+  text-shadow:0 0 2px #000;
+}

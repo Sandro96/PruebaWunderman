@@ -1,0 +1,107 @@
+#Art
+{
+    display:flex ;
+    margin:28px 0 ;
+    padding:0 9px ;
+    flex-direction:column ;
+    width:100% ;
+    align-items:center ;
+}
+
+#Art h2
+{
+    margin-left:9px ;
+    width:100% ;
+}
+
+#CtrlArt
+{
+    display:flex ;
+    flex-flow:row wrap ;
+    justify-content:space-around ;
+    list-style:none ;
+}
+
+#CtrlArt li
+{
+    display:flex ;
+    flex-direction:column ;
+    width:170px ;
+    height:250px ;
+    border:1px solid #c0c0c0 ;
+    border-radius:7px ;
+    cursor:pointer ;
+    box-shadow:0 2px 0 0 #dcdcdc ;
+    margin:5px 10px ;
+}
+
+#CtrlArt span
+{
+    height:50% ;
+    width:100% ;
+}
+
+.ImgArt 
+{
+    height:100% ;
+    width:100% ;
+    background-color:#c0c0c0 ;
+}
+
+.TxtArt
+{
+    height:100% ;
+    width:100% ;
+    display:flex ;
+    justify-content:space-around ;
+    padding:6px ;
+    flex-direction:column ;
+    text-align:center ;
+}
+
+.TxtArt h3
+{
+    font-size:14px ; 
+    font-weight:bold ;
+}
+
+.TxtArt p
+{
+    font-size:10px
+}
+
+#CtrlArt .down
+{
+    margin-top:18px
+}
+
+
+@media screen and (max-width:400px)
+{    
+    #Art h2
+    {
+        text-align:center
+    }    
+    
+    #CtrlArt li
+    {
+        width:200px ;
+        height:300px ;
+    }
+    
+    .TxtArt h3
+    {
+        font-size:16px ;
+        font-weight:bold ;
+    }
+    
+    .TxtArt p
+    {
+        font-size:13px
+    }
+    
+    #CtrlArt .down 
+    {
+        margin-top:3p
+    }
+}
